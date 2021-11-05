@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Wikilogy\n"
-"POT-Creation-Date: 2019-01-17 13:34+0300\n"
-"PO-Revision-Date: 2019-01-17 13:34+0300\n"
+"Project-Id-Version: PakistanInfo\n"
+"POT-Creation-Date: 2021-10-05 13:34+0300\n"
+"PO-Revision-Date: 2021-11-03 13:34+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -5420,21 +5420,21 @@ msgid "Offset:"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Wikilogy"
+msgid "PakistanInfo"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "themeforest.net/user/gloriathemes"
+msgid "github.com/doctorbhatti"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Wikilogy – Blog & Wiki WordPress Theme"
+msgid "PakistanInfo - A project by doctorbhatti"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Gloria Themes"
+msgid "Muhammad Hassan Ashfaq"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "gloriathemes.com"
+msgid "doctorbhatti.rocks"
 msgstr ""
