@@ -1,5 +1,5 @@
 <?php
-	define( 'WIKILOGY_VERSION', '1.2.1' );
+	define( 'WIKILOGY_VERSION', '1.0.0rel' );
 	include ( get_template_directory() . '/include/core.php');
 	include ( get_template_directory() . '/include/admin.php');
 	include ( get_template_directory() . '/include/widgets.php');
