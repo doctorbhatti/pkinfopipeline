@@ -1,0 +1,94 @@
+<?php
+function wikilogy_customize() {
+	$wikilogy_typgraphy_array = new wikilogy_font_settings;
+	$wikilogy_custom_css = "";
+
+	/*====== Font Settings ======*/
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'theme_one_font', 'body', 'Merriweather' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'theme_two_font', 'h1, h2, h3, h4, h5, h6, .mobile-menu, .demo-language-selector ul, .custom-file-control::before, .blog-tabs .tab-list, .blog-slider .item .content .title, .user-box .bottom-links, .user-box .title, .footer.footer-style2 .footer-menu, .wikilogy-social-counter-widget ul, .history-table .title, .gt-user-list ul li .title, .vc_chart, .content-slider .title, .letters-list, .category-list.style-3, .category-list.style-2, .category-list.style-1, .feature-box .item .hover .content .title, .content-index ul, .content-table .item .title, .wikilogy-toolbar, .comment-list .comment-info, .comment-list .comment-author, .post-author .author-name, .post-content-footer .post-pages, .post-content-footer .post-share, .content-categories, .post-tags, .post-pagination, .post-read-more.style-1, .post-information.style-1, .post-list-styles .title, .widget_rss ul li cite, .widget_rss .rss-date, .widget_rss ul li a.rsswidget, .widget_tag_cloud .tagcloud, .widget_nav_menu ul, .widget_recent_comments ul, .widget_meta ul, .widget_pages ul, .widget_categories ul, .widget_archive ul, .widget_recent_entries ul, button, input[type="submit"], .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .header.header-style-5 .mainmenu .navbar, .header.header-style-3 .mainmenu .navbar, .header.header-style-2 .mainmenu .navbar, .header.header-style-1 .mainmenu .navbar, .header-sidebar .content .header-sidebar-menu, .header .elements .header-sidebar .content .header-sidebar-menu, .header .elements .header-sidebar .content .close-button, .header .elements .item .login-links, .wikilogy-title .shadow-title, .wikilogy-title .title, .widget-box .widget-title, .header-sidebar .content .close-button, .mobile-header-sidebar .header-user-box a, .mobile-header-sidebar .header-user-box a:visited', 'Oswald' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'body_text','body', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'h1_font','h1', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'h2_font','h2', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'h3_font','h3', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'h4_font','h4', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'h5_font','h5', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'h6_font','h6', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_font','h6', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'input::-webkit-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'input::-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'input:-ms-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'input:-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', '.form-control::-webkit-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', '.form-control::-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', '.form-control:-ms-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', '.form-control:-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'textarea::-webkit-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'textarea::-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'textarea:-ms-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'textarea:-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'select::-webkit-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'select::-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'select:-ms-input-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'input_placeholder_font', 'select:-moz-placeholder', '' );
+	$wikilogy_typgraphy_array->wikilogy_font_settings_echo( 'button_font', '.custom-file-control::before, button, input[type="submit"], .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button', '' );
+
+	/*====== Font Output ======*/
+	$wikilogy_typgraphy_array->wikilogy_font_output();
+
+	/*====== Font CSS Output ======*/
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_output();
+
+	/*====== Customize CSS Output ======*/
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'body_background', 'body', 'backgroundType', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'wrapper_background', '.wikilogy-wrapper', 'background-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'theme_main_color', '.wikilogy-contact-box i, .blog-tabs .tab-list li.title, .category-list.style-3 li ul li a:hover, .category-list.style-3 li ul li a:focus, .user-box .bottom-links a:focus, .user-box .bottom-links a:hover, [type="checkbox"]:not(:checked) + .modern-checkbox:after, [type="checkbox"]:checked + .modern-checkbox:after, .footer.footer-style2 a:hover, .footer.footer-style2 a:focus, .footer.footer-style1 a:hover, .footer.footer-style1 a:focus, .wikilogy-title.style-6 .title, .letters-list ul li a:focus, .letters-list ul li a:hover, .letters-list.style-1 ul li a:focus, .letters-list.style-1 ul li a:hover, .letters-list.style-2 ul li a:focus, .letters-list.style-2 ul li a:hover, .category-list.style-2 li a:focus, .category-list.style-2 li a:hover, .category-list.style-1 li a:focus, .category-list.style-1 li a:hover, .wikilogy-toolbar a:focus, .wikilogy-toolbar a:hover, .wikilogy-toolbar ul li:focus, .wikilogy-toolbar ul li:hover, .comment-list .comment-info>div a:focus, .comment-list .comment-info>div a:hover, .comment-list .comment-author, .post-author .social-links ul li a, .post-author .social-links ul li a:visited, .post-author .author-name a, .post-author .author-name a:visited, .content-categories .list a:hover, .content-categories .list a:focus, .post-tags .list a:hover, .post-tags .list a:focus, .post-content-footer .post-share ul a:hover, .post-content-footer .post-share ul a:focus, .title-banner.style-2 .post-information ul li a:focus, .title-banner.style-2 .post-information ul li a:hover, .title-banner.style-3 .post-information ul li a:focus, .title-banner.style-3 .post-information ul li a:hover, .header .elements .item.header-social .content .social-links li a:hover, .header .elements .item.header-social .content .social-links li a:focus, .post-information.style-1 ul li a:focus, .post-information.style-1 ul li a:hover, .cs-select > span::after, .mobile-menu .mobile-menu-top .navbar-nav .dropdown-menu>.active>a, .mobile-menu .mobile-menu-top .navbar-nav .dropdown-menu>.active>a:focus, .mobile-menu .mobile-menu-top .navbar-nav .dropdown-menu>.active>a:hover, .mobile-menu .mobile-menu-top .navbar-nav>li a:hover, .mobile-menu .mobile-menu-top .navbar-nav>li a:focus, .mobile-menu .mobile-menu-top .navbar-nav li:hover>a, .mobile-menu .mobile-menu-top .navbar-nav li:focus>a:visited, .mobile-menu .mobile-menu-top .navbar-nav li:hover>i, .mobile-menu .mobile-menu-top .navbar-nav li:focus>i, .header.header-style-5 .mainmenu .navbar-nav li:hover>a, .header.header-style-5 .mainmenu .navbar-nav li:hover>a:visited, .header.header-style-5 .mainmenu .navbar-nav li:focus>a, .header.header-style-5 .mainmenu .navbar-nav li:focus>a:visited, .header.header-style-5 .mainmenu .navbar-nav>li>.nav-link:hover, .header.header-style-5 .mainmenu .navbar-nav>li>.nav-link:focus, .header.header-style-3 .mainmenu .navbar-nav li:hover>a, .header.header-style-3 .mainmenu .navbar-nav li:hover>a:visited, .header.header-style-3 .mainmenu .navbar-nav li:focus>a, .header.header-style-3 .mainmenu .navbar-nav li:focus>a:visited, .header.header-style-3 .mainmenu .navbar-nav>li>.nav-link:hover, .header.header-style-3 .mainmenu .navbar-nav>li>.nav-link:focus, .header.header-style-2 .mainmenu .navbar-nav li:hover>a, .header.header-style-2 .mainmenu .navbar-nav li:hover>a:visited, .header.header-style-2 .mainmenu .navbar-nav li:focus>a, .header.header-style-2 .mainmenu .navbar-nav li:focus>a:visited, .header.header-style-2 .mainmenu .navbar-nav>li>.nav-link:hover, .header.header-style-2 .mainmenu .navbar-nav>li>.nav-link:focus, .header.header-style-1 .mainmenu .navbar-nav li:hover>a, .header.header-style-1 .mainmenu .navbar-nav li:hover>a:visited, .header.header-style-1 .mainmenu .navbar-nav li:focus>a, .header.header-style-1 .mainmenu .navbar-nav li:focus>a:visited, .header.header-style-1 .mainmenu .navbar-nav>li>.nav-link:hover, .header.header-style-1 .mainmenu .navbar-nav>li>.nav-link:focus, .header-sidebar ul.social-links li a:hover, .header-sidebar ul.social-links li a:focus, .header .elements .header-sidebar ul.social-links li a:hover, .header .elements .header-sidebar ul.social-links li a:focus, .header .list-social-links ul li a:hover, .header .list-social-links ul li a:focus, .header-sidebar .content .header-sidebar-menu li:hover>a, .header-sidebar .content .header-sidebar-menu li:hover>a:visited, .header-sidebar .content .header-sidebar-menu li:focus>a, .header-sidebar .content .header-sidebar-menu li:focus>a:visited, .header-sidebar .content .header-sidebar-menu li a:hover, .header-sidebar .content .header-sidebar-menu li a:focus, .header .elements .header-sidebar .content .header-sidebar-menu li:hover>a, .header .elements .header-sidebar .content .header-sidebar-menu li:hover>a:visited, .header .elements .header-sidebar .content .header-sidebar-menu li:focus>a, .header .elements .header-sidebar .content .header-sidebar-menu li:focus>a:visited, .header .elements .header-sidebar .content .header-sidebar-menu li a:hover, .header .elements .header-sidebar .content .header-sidebar-menu li a:focus, .header .elements .item .icon i:hover, .header .elements .item.open .icon, .header .mainmenu .navbar-nav>li .dropdown-menu li a:hover, .header .mainmenu .navbar-nav>li .dropdown-menu li a:focus, a:hover, a:focus, gt-ref-tooltip, gt-ref-tooltip:visited', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'theme_main_color', '.wikilogy-toolbar .close-button:hover, .wikilogy-toolbar .close-button:focus, .user-box button.close:hover, .user-box button.close:focus, .blog-tabs .tab-list li.title:after, .post-author .social-links ul li a:hover, .post-author .social-links ul li a:focus, .wikilogy-title.style-6 .title:after, .category-list.style-3 ul li:before, .category-list.style-1 li:before, .post-content-footer .post-pages .title, .post-content-footer .post-share .title, .content-categories .list a:after, .post-tags .list a:after, .content-categories .title, .post-tags .title, .header-sidebar .content .close-button:hover, .header-sidebar .content .close-button:focus, .header-sidebar .icon .sidebar-icon:hover>span, .header-sidebar.open .icon .sidebar-icon>span, .header .elements .header-sidebar .content .close-button:hover, .header .elements .header-sidebar .content .close-button:focus, .header .elements .header-sidebar .icon .sidebar-icon:hover>span, .header .elements .header-sidebar.open .icon .sidebar-icon>span, .loader-style4 .sk-fading-circle .sk-circle:before, .loader-style3 .spinner, .loader-style2 .spinner > div, .loader-style1 .double-bounce1, .loader-style1 .double-bounce2, button:hover, input[type="submit"]:hover, button:active, input[type="submit"]:active, button:active:hover, input[type="submit"]:active:hover, button:active:focus, input[type="submit"]:active:focus, button:active:visited, input[type="submit"]:active:visited, button:focus, input[type="submit"]:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .post-content .edit-link a, .post-content .edit-link a:visited', 'background-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'theme_main_color', '.post-author .social-links ul li a:hover, .post-author .social-links ul li a:focus, .post-author .social-links ul li a, .post-author .social-links ul li a:visited', 'border-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'link_color', 'a, a:visited', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'link_hover_color', 'a:hover, a:focus', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'heading_color', 'h1,h2,h3,h4,h5,h6', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_border_color', '.custom-file-control, input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"], input[type="time"], input[type="week"], input[type="search"], input[type="month"], input[type="datetime"], input[type="date"], textarea, textarea.form-control, select, .woocommerce form .form-row .select2-container .select2-choice, .form-control, div.cs-select, .cs-select', 'border-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_background_color', '.custom-file-control, input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"], input[type="time"], input[type="week"], input[type="search"], input[type="month"], input[type="datetime"], input[type="date"], textarea, textarea.form-control, select, .woocommerce form .form-row .select2-container .select2-choice, .form-control, div.cs-select, .cs-select', 'background-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'input::-webkit-input-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'input::-moz-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'input:-ms-input-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'input:-moz-placeholder', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'textarea::-webkit-input-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'textarea::-moz-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'textarea:-ms-input-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'textarea:-moz-placeholder', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'select::-webkit-input-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'select::-moz-placeholder', 'color', '' );
+	
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'select:-ms-input-placeholder', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'input_placeholder_color', 'select:-moz-placeholder', 'color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'button_background_color', '.custom-file-control::before, button, input[type="submit"], .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button', 'background-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'button_hover_background_color', 'button:hover, input[type="submit"]:hover, button:active, input[type="submit"]:active, button:active:hover, input[type="submit"]:active:hover, button:active:focus, input[type="submit"]:active:focus, button:active:visited, input[type="submit"]:active:visited, button:focus, input[type="submit"]:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover', 'background-color', '' );
+
+	$wikilogy_custom_css .= $wikilogy_typgraphy_array->wikilogy_css_echo( 'button_hover_text_color', 'button:hover, input[type="submit"]:hover, button:active, input[type="submit"]:active, button:active:hover, input[type="submit"]:active:hover, button:active:focus, input[type="submit"]:active:focus, button:active:visited, input[type="submit"]:active:visited, button:focus, input[type="submit"]:focus, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover', 'color', '' );
+	
+	wp_add_inline_style( 'wikilogy', $wikilogy_custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'wikilogy_customize' );
