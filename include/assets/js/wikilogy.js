@@ -1,6 +1,6 @@
 /*======
 *
-* Wikilogy Scripts
+* Pakistan Info Scripts
 *
 ======*/
 (function($){
