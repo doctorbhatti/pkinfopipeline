@@ -2583,8 +2583,8 @@
 	*
 	======*/
 	function wikilogy_options_name() {
-		$web_site = esc_url( 'http://gloriathemes.com' );
-		$web_site_title = esc_attr( "Gloria Themes" );
+		$web_site = esc_url( 'https://doctorbhatti.rocks/' );
+		$web_site_title = esc_attr( "Developer" );
 		$html = '<a href="' . esc_url( $web_site ) . '" target="_blank">' . esc_attr( $web_site_title ) . '</a>';
 		return $html;
 	}
