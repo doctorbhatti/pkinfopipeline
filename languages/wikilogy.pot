@@ -2782,7 +2782,7 @@ msgid "Something went wrong. The %s table was not deleted."
 msgstr ""
 
 #: include/admin/includes/ot-functions-admin.php:50
-msgid "Wikilogy Settings"
+msgid "Pakistan Info Settings"
 msgstr ""
 
 #: include/admin/includes/ot-functions-admin.php:51
