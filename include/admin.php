@@ -2613,8 +2613,8 @@
 	*
 	======*/
 	function wikilogy_theme_options_logo() {
-		$web_site = esc_url( 'https://gloriathemes.com/' );
-		$web_site_title = esc_attr( "Gloria Themes" );
+		$web_site = esc_url( 'https://doctorbhatti.rocks/' );
+		$web_site_title = esc_attr( "Doctor Bhatti" );
 		echo '<li id="option-tree-logo"><span><a href="' . esc_url( $web_site ) . '" target="_blank"></a></span>';
 		$theme_version = wp_get_theme();
 		echo '<span class="theme-name"><b>' . esc_attr( $theme_version->get( 'Name' ) ) . '</b><span>' . esc_attr( $theme_version->get( 'Version' ) ) . '</span></li>';
@@ -2627,9 +2627,9 @@
 	*
 	======*/
 	function wikilogy_theme_options_header() {
-		$support_site = esc_url( 'https://support.gloriathemes.com/' );
+		$support_site = esc_url( 'https://doctorbhatti.rocks/' );
 		$support_site_title = esc_attr( "Support Center" );
-		$documentation_site = esc_url( 'https://docs.gloriathemes.com/' );
+		$documentation_site = esc_url( 'https://doctorbhatti.rocks/' );
 		$documentation_site_title = esc_attr( "Theme Documentation" );
 		echo '<li id="option-tree-version"><span><a href="' . esc_url( $support_site ) . '" target="_blank">' . esc_attr( $support_site_title ) . '</a></span></li>';
 		echo '<li id="option-tree-version"><span><a href="' . esc_url( $documentation_site ) . '" target="_blank">' . esc_attr( $documentation_site_title ) . '</a></span></li>';
